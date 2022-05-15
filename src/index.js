@@ -11,7 +11,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 const p = document.createElement('p');
 p.classList.add('card-text');
-p.textContent = 'It works!';
+p.textContent = 'It works!1337';
 
 const h5 = document.createElement('h5');
 h5.classList.add('card-title');
