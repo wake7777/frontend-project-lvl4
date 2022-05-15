@@ -2,6 +2,8 @@
 
 [![Actions Status](https://github.com/wake7777/frontend-project-lvl4/workflows/hexlet-check/badge.svg)](https://github.com/wake7777/frontend-project-lvl4/actions)
 
+[Heroku CLI](https://vast-journey-12635.herokuapp.com/)
+
 # project-frontend-l4-server
 
 [![github action status](https://github.com/hexlet-components/projects-frontend-l4-server/workflows/Node%20CI/badge.svg)](../../actions)
