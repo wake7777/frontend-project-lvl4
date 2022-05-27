@@ -1,31 +1,24 @@
 // @ts-check
-
 import 'core-js/stable/index.js';
 import 'regenerator-runtime/runtime.js';
+import ReactDOM from 'react-dom';
+import { io } from 'socket.io-client';
 
 import '../assets/application.scss';
+import init from './init.jsx';
 
-if (process.env.NODE_ENV !== 'production') {
-  localStorage.debug = 'chat:*';
-}
+const runApp = async () => {
+  const mode = process.env.NODE_ENV;
 
-const p = document.createElement('p');
-p.classList.add('card-text');
-p.textContent = 'It works!1337';
+  if (mode !== 'production') {
+    localStorage.debug = 'chat:*';
+  }
 
-const h5 = document.createElement('h5');
-h5.classList.add('card-title');
-h5.textContent = 'Project frontend l4 boilerplate';
+  const socket = io();
+  const vdom = await init(socket);
+  const container = document.querySelector('#chat');
 
-const cardBody = document.createElement('div');
-cardBody.classList.add('card-body');
-cardBody.append(h5, p);
+  ReactDOM.render(vdom, container);
+};
 
-const card = document.createElement('div');
-card.classList.add('card', 'text-center');
-card.append(cardBody);
-
-const container = document.querySelector('#chat');
-container.append(card);
-
-console.log('it works!');
+runApp();

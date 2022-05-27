@@ -2,6 +2,7 @@
 
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Dotenv = require('dotenv-webpack');
 
 const mode = process.env.NODE_ENV || 'development';
 
@@ -14,15 +15,16 @@ module.exports = {
     path: path.join(__dirname, 'dist', 'public'),
     publicPath: '/assets/',
   },
+  devtool: mode === 'production' ? false : 'source-map',
   devServer: {
     compress: true,
-    port: 8090,
+    port: 8080,
     host: '0.0.0.0',
-    // publicPath: '/assets/',
     historyApiFallback: true,
   },
   plugins: [
     new MiniCssExtractPlugin(),
+    new Dotenv(),
   ],
   module: {
     rules: [
@@ -32,7 +34,7 @@ module.exports = {
         use: 'babel-loader',
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.(c|s[ac])ss$/i,
         use: [
           { loader: MiniCssExtractPlugin.loader },
           { loader: 'css-loader' },
