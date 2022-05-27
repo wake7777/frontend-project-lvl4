@@ -17,12 +17,12 @@
     "type": "git",
     "url": "git+https://github.com/mishchenkoandrey/frontend-project-lvl3.git"
   },
-  "author": "Andrey Mishchenko",
+  "author": "Alexander Trusov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mishchenkoandrey/frontend-project-lvl4/issues"
+    "url": "https://github.com/wake7777/frontend-project-lvl4/issues"
   },
-  "homepage": "https://github.com/mishchenkoandrey/frontend-project-lvl4#readme",
+  "homepage": "https://github.com/wake7777/frontend-project-lvl4#readme",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.2",
     "@rollbar/react": "^0.8.0",
