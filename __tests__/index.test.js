@@ -1,11 +1,7 @@
-import fastify from 'fastify';
-import { test, expect } from '@jest/globals';
-
-import init from '../server/plugin.js';
+import buildApp from '../server/index.js';
 
 test('get /', async () => {
-  const app = fastify({ logger: { prettyPrint: true } });
-  await init(app, { state: {} });
+  const app = buildApp({ port: 5000 });
   const response = await app.inject({
     url: '/',
   });
