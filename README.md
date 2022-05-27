@@ -1,29 +1,20 @@
 # project-frontend-l4-server
 
-[![Github Actions Status](https://github.com/hexlet-components/projects-frontend-l4-server/workflows/Node%20CI/badge.svg)](https://github.com/hexlet-components/projects-frontend-l4-server/actions)
+[![Github Actions Status](https://github.com/wake7777/frontend-project-lvl4/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/wake7777/frontend-project-lvl4/actions/workflows/hexlet-check.yml)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/dda63734ba3e85bf6ab0/maintainability)](https://codeclimate.com/github/temirKhan42/frontend-project-lvl4/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c1dd3886cbf3d9de5a6a/maintainability)](https://codeclimate.com/github/wake7777/frontend-project-lvl4/maintainability)
 
-## Link to app
-* [App](https://vast-river-17113.herokuapp.com/)
 
-## Requirements
+### [Slack App]()
 
-* [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 
-## Install
-
+### Setup
 ```sh
 $ make install
 ```
 
-## Run
-
+### Start
 ```sh
 $ make start
 # open http://localhost:5000
 ```
-
-[![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=project-frontend-l4-server)
-
-This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet (in Russian)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=project-frontend-l4-server).
