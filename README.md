@@ -5,7 +5,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/c1dd3886cbf3d9de5a6a/maintainability)](https://codeclimate.com/github/wake7777/frontend-project-lvl4/maintainability)
 
 
-### [Slack App]()
+### [Slack App](https://calm-beach-71545.herokuapp.com/login)
 
 
 ### Setup
