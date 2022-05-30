@@ -7,7 +7,6 @@ import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import routes from '../routes.js';
 import useAuth from '../hooks/index.jsx';
-// import { useRollbar } from '@rollbar/react';
 // import image from '../../assets/signup-image.js';
 
 const getData = async (option) => {
@@ -71,7 +70,6 @@ const SignupForm = () => {
           if (err.message === 'Request failed with status code 409') {
             setAuthUniqFailed(true);
             console.log(err);
-            // rollbar.error('Authentication failed', err);
           }
         }
       }}
@@ -165,7 +163,7 @@ const SignupImage = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'signupPage' });
   return (
     <div>
-      <img src="#" className="rounded-circle" alt={t('image alt')} />
+      <img src="https://avatars.mds.yandex.net/get-images-cbir/516543/BED4UeK_swqfqrfSDJiVlA3524/ocr" className="rounded-circle" alt={t('image alt')} />
     </div>
   );
 };
